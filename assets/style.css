@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Color Scheme */
+:root {
+    --primary: rgb(26, 77, 26);
+    --seconday: rgb(16, 196, 16);
+    --third: rgb(35, 44, 35);
+    --black: black;
+    --white: white;
+}
+
+/* Non-Class/ID  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--black);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--black);
+  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+header h1 {
+  color: var(--primary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+}
+/* Nav Elements */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 15px 10px;
+  color: var(--secondary);
+  margin-right: 20px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--primary);
+}
+
+nav a:last-child {
+  margin-right: 5;
+}
+/* main elements */
+main {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+/* banner classes/elements */
+.banner {
+    background: rgb(2, 34, 7);
+    background-image: url(./pictures/25336.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--black);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .banner div {
+    flex: 0 0 90%;
+  }
+
+  .banner h2 {
+    background-color: var(--secondary);
+  color: var(--third);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+
+  }
+/* Page Classes */
+  .page-wrap {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+  
+  .page-section p {
+    margin-bottom: 20px;
+  }
+
+/* flex classes */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
